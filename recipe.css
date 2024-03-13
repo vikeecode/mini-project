@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#navlist{
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+        
+}
+.navcontainer{
+    width: 100vw;
+    /*background: rgba(69, 69, 114, 0.692);*/
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.container{
+    height: 100vh;
+    overflow-x:none;
+    width: 100vw;
+   /* background-color: #8EC5FC;
+   background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);*/
+ background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    
+
+
+
+}
+nav{
+    width: 100%;
+    padding-right: 1.5rem;
+}
+#navlogo{
+    font-size: 2.8rem;
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#navitem{
+    display: flex;
+    gap: 30px;
+}
+.footerbox{
+    background-color:#06EF2A;
+   /* background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);*/
+    color: azure;
+    text-align: center;
+    min-height: 50px;
+
+}
+.footerbox p{
+    font-size: 2rem;
+}
+.contentbox{
+    width: 80%;
+    margin:  auto;
+  /*  border: solid 1px black;*/
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-left: 40px;
+    box-shadow: 1px 1px 30px black;
+    background-image:"foodie.png";
+     
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s 0s linear;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 30px;
+}
+.rightbox img{
+    height:200px ;
+    border-radius: 20px;
+    transition: all 0.5s 0s linear;
+    
+}
+.rightbox:hover{
+    transform: scale(1.2);
+
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.leftbox ol{
+    font-family: 'Times New Roman', Times, serif;
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+.ingbox{
+    font-size: 1.4rem;
+}
+.recipebox{
+    font-size: 1.4rem;
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(29, 27, 27, 0.712);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s 0s linear ;
+
+}
+.rightbox:hover .overlay{
+     opacity: 1;
+} 
+.rightbox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}
+.recipe2{
+    font-size: 1.4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
